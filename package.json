@@ -1,6 +1,6 @@
 {
   "name": "create-llm-agent",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Quickly scaffold a TypeScript-based LLM agent application with local or remote AI models",
   "main": "dist/cli.js",
   "type": "module",
