@@ -1,0 +1,62 @@
+{
+  "name": "create-llm-agent",
+  "version": "1.0.0",
+  "description": "Quickly scaffold a TypeScript-based LLM agent application with local or remote AI models",
+  "main": "dist/cli.js",
+  "type": "module",
+  "bin": {
+    "create-llm-agent": "./dist/cli/cli.js"
+  },
+  "files": [
+    "dist",
+    "template",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "dev": "tsx ./cli/cli.ts"
+  },
+  "keywords": [
+    "llm",
+    "ai",
+    "agent",
+    "chatbot",
+    "openai",
+    "ollama",
+    "typescript",
+    "starter",
+    "template",
+    "cli",
+    "scaffold",
+    "create"
+  ],
+  "author": "Mo-Kamal",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mo-kamal/create-llm-agent.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mo-kamal/create-llm-agent/issues"
+  },
+  "homepage": "https://github.com/mo-kamal/create-llm-agent#readme",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.0.0",
+    "fs-extra": "^11.2.0",
+    "inquirer": "^12.9.2",
+    "ora": "^8.0.1"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^24.3.0",
+    "tsx": "^4.20.4",
+    "typescript": "^5.9.2"
+  }
+}
