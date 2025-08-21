@@ -24,7 +24,7 @@ export const runLLM = async ({
     messages: [{ role: Role.SYSTEM, content: systemPrompt }, ...messages],
     max_tokens: 500,
     ...(process.env.LLM_TOOL_CALLING && formattedTools?.length > 0
-      ? toolRelatedConfigs
+      ? { toolRelatedConfigs }
       : {}),
   });
 
